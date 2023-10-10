@@ -62,7 +62,7 @@ class NeoPixel:
         else:
             raise ValueError("Brightness should be in the range 0-255")
 
-    def blink(self, color, repeat=3, durian=500):  # 有点问题，虽说是能实现，但是不太全面，比如得自己手动填写色彩啊，只能按次数闪烁啊
+    def blink(self, color, repeat=3, durian=500): 
         for i in range(repeat):
             self.fill(color)
             self.write()
